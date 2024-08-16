@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es2018",                             /* Ajuste para a versão do ECMAScript conforme necessário */
+    "module": "commonjs",                           /* Use 'esnext' se estiver usando um bundler */
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "sourceMap": true,                              /* Facilita a depuração */
+    "outDir": "./dist",                             /* Define o diretório de saída */
+    "rootDir": "./src",                             /* Define o diretório raiz do código fonte */
+    "lib": ["es2018", "dom"],                       /* Inclui bibliotecas relevantes */
+    "esModuleInterop": true                         /* Habilita interoperabilidade com módulos CommonJS */
+  },
+  "include": [
+    "src/**/*"                                      /* Inclui todos os arquivos na pasta src */
+  ],
+  "exclude": [
+    "node_modules",                                 /* Exclui a pasta node_modules */
+    "dist"                                          /* Exclui a pasta dist de saída */
+  ]
+}
