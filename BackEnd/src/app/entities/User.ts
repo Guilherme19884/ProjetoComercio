@@ -6,6 +6,8 @@ const UserSchema: Schema = new Schema({
   name: { type: String, maxlength: 250, required: true },
   email: { type: String, maxlength: 250, required: true, unique: true },
   password: { type: String, required: true },
+  createdAt: { type: Date, default: Date.now },
+  updatedAt: { type: Date, default: Date.now },
   avatar: { type: String, maxlength: 250, required: true },
   state: { type: Number, dafault:1 }, //1 está ativo e 2 está inativo
   phone: { type: String, maxlength: 20, required: false},
